@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Borel&display=swap");
+@import "primeng/resources/themes/lara-light-teal/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+html {
+    --spacing: 16px;
+}
+
+html,
+body,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #4b5563;
+}
+
+h3 {
+    margin: 0 0 16px 0;
+}
+
+h4 {
+    margin: 8px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    margin: var(--spacing);
+    padding: var(--spacing);
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.box {
+    margin: var(--spacing);
+    background-color: #fff;
+    border: solid 1px #ddd;
+    border-radius: 5px;
+}
+
+.sidebar {
+    width: 20%;
+    padding: var(--spacing);
+}
+
+.main {
+    flex: 1;
+    padding: var(--spacing);
+}
+
+.sticky {
+    position: sticky;
+    top: 12px;
+}

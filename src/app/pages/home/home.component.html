@@ -1,0 +1,34 @@
+<app-container>
+    <section class="sidebar">
+        <div class="logo">
+            <div class="title">
+                <img src="assets/img/logo.png" alt="logo" width="250" height="80">
+            </div>
+        </div>
+        <div class="sticky">
+            <form [formGroup]="form">
+                <h3>Busca</h3>
+                <p-iconField iconPosition="left">
+                    <p-inputIcon styleClass="pi pi-search" />
+                    <input type="text" class="input-text" pInputText placeholder="Pesquisar..." formControlName="search" />
+                </p-iconField>
+
+                <p-divider></p-divider>
+
+                <h3>Tipo Tribunal</h3>
+                <div formArrayName="tiposTribunais">
+                    <div *ngFor="let tipoTribunal of tiposTribunais$ | async; let i = index" class="checkbox">
+                        <p-checkbox [label]="tipoTribunal.tipo" [formControlName]="i" [value]="tipoTribunal.id">
+                        </p-checkbox>
+                    </div>
+                </div>
+
+                <p-divider></p-divider>
+
+            </form>
+        </div>
+    </section>
+    <main class="main box" *ngIf="(tribunaisFilter$ | async) as tribunais">
+        <app-tribunais [tribunais]="tribunais" />
+    </main>
+</app-container>
