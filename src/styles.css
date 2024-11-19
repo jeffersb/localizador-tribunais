@@ -3,6 +3,10 @@
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
     --spacing: 16px;
 }
@@ -64,4 +68,9 @@ h4 {
 .sticky {
     position: sticky;
     top: 12px;
+}
+
+
+.p-checkbox-box{
+    outline: 1px solid #6366F1 !important;
 }

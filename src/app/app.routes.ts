@@ -6,5 +6,5 @@ import { TribunalDetalheComponent } from './pages/tribunal-detalhe/tribunal-deta
 export const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
-    { path: 'tribunal-detalhe', component: TribunalDetalheComponent },
+    { path: 'tribunal-detalhe/:codigo', component: TribunalDetalheComponent },
 ];

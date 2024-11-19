@@ -1,7 +1,9 @@
-<img [src]="tribunal.imagem" [alt]="tribunal.nome">
-<h4>
-    {{ tribunal.sigla }}
-</h4>
-<p>
-    {{ tribunal.nome}}
-</p>
+<div (click)="redirecionarTribunalDetalhes()">
+    <img [src]="tribunal.imagem" [alt]="tribunal.nome">
+    <h4>
+        {{ tribunal.sigla }}
+    </h4>
+    <p>
+        {{ tribunal.nome}}
+    </p>
+</div>

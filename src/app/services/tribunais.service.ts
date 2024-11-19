@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { filter, find, first, Observable } from 'rxjs';
 import { TribunalModel } from '../models/tribunal.model';
 
 @Injectable({
@@ -16,4 +16,6 @@ export class TribunaisService {
   public getTribunais(): Observable<TribunalModel[]> {
        return this.httpClient.get<TribunalModel[]>(this.url);
   }
+
+   
 }

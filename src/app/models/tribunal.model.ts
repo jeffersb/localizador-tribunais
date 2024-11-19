@@ -5,5 +5,7 @@ export type TribunalModel = {
     logo: string;
     imagem: string;
     tipoTribunal: number[];
+    coordenada: string;
+    endereceo: string;
 };
   

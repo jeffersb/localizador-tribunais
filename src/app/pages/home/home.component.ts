@@ -47,6 +47,7 @@ import { TribunaisComponent } from '../../ui/tribunais/tribunais.component';
 })
 export class HomeComponent implements OnInit, OnDestroy {
     tipoTribunaisService = inject(TipoTribunalService);
+
     tribunaisService = inject(TribunaisService);
     fb = inject(FormBuilder);
 
